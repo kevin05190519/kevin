@@ -19,7 +19,6 @@ values_list = worksheet_page4.col_values(2)
 worksheet_page2 = sht2.get_worksheet(2)
 
 
-#count={"count_store":0,"count_gender":0,"count_clothes":0,"count_style":0,"count_color":0,"count_size":0}
 def set_count():
     get_count_store(2, 0, 2)
     get_count_gender(5,3)
@@ -116,7 +115,7 @@ def get_count_size(col,x,y):
 
 def get_all_count():
     set_count()
-    
+
 if __name__ == "__main__":
     get_all_count()
 

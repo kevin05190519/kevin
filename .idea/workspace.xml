@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72035da0-5dde-427b-be0c-a0be58c33636" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MongoManager_test.py" afterPath="$PROJECT_DIR$/MongoManager_test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_for_googlesheet.py" afterPath="$PROJECT_DIR$/crawler_for_googlesheet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +19,8 @@
       <file leaf-file-name="crawler_for_googlesheet.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crawler_for_googlesheet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+            <state relative-caret-position="-1012">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding>
                 <element signature="e#59#70#0" expanded="true" />
               </folding>
@@ -148,7 +147,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="690" y="43" width="1869" height="1318" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -202,8 +200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler_for_googlesheet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+        <state relative-caret-position="-1012">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding>
             <element signature="e#59#70#0" expanded="true" />
           </folding>
