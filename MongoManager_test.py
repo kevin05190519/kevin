@@ -47,51 +47,18 @@ class MongoManager:
                     "createdDate": data['date']
                 })
 
-    def update_score (self,view, data):
-        col = get_score_collection(view)
-        collection = self.db[col]
-        result = collection.update_one({"title" : "5 stars"}, {"$set":{ "value" : data['5']}})
-        if not result.raw_result['updatedExisting']: collection.insert_one({ "title" : "5 stars", "value" : data['5']})
-        result = collection.update_one({"title" : "4 stars"}, {"$set":{ "value" : data['4']}})
-        if not result.raw_result['updatedExisting']: collection.insert_one({ "title" : "4 stars", "value" : data['4']})
-        result = collection.update_one({"title" : "3 stars"}, {"$set":{ "value" : data['3']}})
-        if not result.raw_result['updatedExisting']: collection.insert_one({ "title" : "3 stars", "value" : data['3']})
-        result = collection.update_one({"title" : "2 stars"}, {"$set":{ "value" : data['2']}})
-        if not result.raw_result['updatedExisting']: collection.insert_one({ "title" : "2 stars", "value" : data['2']})
-        result = collection.update_one({"title" : "1 star"}, {"$set":{ "value" : data['1']}})
-        if not result.raw_result['updatedExisting']: collection.insert_one({ "title" : "1 star", "value" : data['1']})
-        result = collection.update_one({"title" : "avg"}, {"$set":{ "value" : data['avg']}})
-        if not result.raw_result['updatedExisting']: collection.insert_one({ "title" : "avg", "value" : data['avg']})
-
 
 def get_collection(view):
 
-        if view == 'ios':
-            return MongoViews.MONGO_VIEW_IOS_REVIEWS
-        else :
-            return MongoViews.MONGO_VIEW_ANDROID_REVIEWS
-def get_score_collection(view):
 
-        if view == 'ios':
-            return MongoViews.MONGO_VIEW_IOS_REVIEW_SCORE
-        else:
-            return MongoViews.MONGO_VIEW_ANDROID_REVIEW_SCORE
+        if view == 'ios':return MongoViews.MONGO_VIEW_STORE
+        if view == 'ios':return MongoViews.MONGO_VIEW_GENDER
+        if view == 'ios':return MongoViews.MONGO_VIEW_CLOTHES
+        if view == 'ios':return MongoViews.MONGO_VIEW_STYLE
+        if view == 'ios':return MongoViews.MONGO_VIEW_COLOR
+        else :return MongoViews.MONGO_VIEW_SIZE
 
 
 
 
 
-
-
-    # def importCSV(self):
-    #     csv_path  = "{}/{}".format(os.path.dirname(os.path.realpath(__file__)),'daily_issues_status.csv')
-    #     #write to CSV file
-    #     with open(csv_path, 'rb') as f:
-    #         r = csv.reader(f)
-    #         olddata = [line for line in r]
-    #
-    #     csv_data = []
-    #     csv_data.extend(olddata)
-    #
-    #     for item in csv_data:
-    #         self.insertDailyIssuesCount(item)
